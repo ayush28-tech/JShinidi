@@ -29,3 +29,28 @@ const myFunction = function(){
 
 }
 console.log( typeof [heroes,myObj,myFunction]);
+
+
+
+
+// ++++++++++++++ Stack(Primitive), Heap (Non-Primitive)  +++++++++++++++++
+
+// stack always gives copy but heap always gives reference 
+//stack
+let myname="Ayush"
+let anothername=myname
+anothername="Ashu"
+
+console.log(myname)
+console.log(anothername)
+
+
+//heap
+let userOne ={
+    name:"Ayush",
+    age:21
+}
+let userTwo= userOne
+userTwo.name="Ashu"
+console.log(userOne);
+console.log(userTwo)
